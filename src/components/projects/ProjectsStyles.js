@@ -11,7 +11,7 @@ color: #fff;
 
 export const CardContainer = styled.div`
 display: flex;
-flex-direction: row;
+flex-wrap: wrap;
 `
 
 export const Card = styled.div`

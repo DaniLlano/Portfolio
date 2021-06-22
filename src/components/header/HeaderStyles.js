@@ -18,6 +18,7 @@ cursor: pointer;
 `
 
 export const Anchor = styled.a`
+color: #15202B;
 position: relative;
 text-decoration: none;
 transition: color .4s ease-out;
