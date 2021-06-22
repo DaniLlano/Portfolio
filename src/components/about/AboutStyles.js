@@ -5,6 +5,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+text-align: center;
 width: 60%;
 margin: auto;
 padding: 4rem 0;
