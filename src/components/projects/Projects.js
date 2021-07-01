@@ -1,16 +1,22 @@
 import React from 'react'
-import {ProjectsContainer, ProjectsTitle, CardContainer, Card} from "./ProjectsStyles"
+import { proyectos } from "../../data/data"
+import {ProjectsContainer, ProjectsTitle, CardContainer, Card, ProyectImg, LinkContainer, Links} from "./ProjectsStyles"
 
 function Projects() {
     return (
         <ProjectsContainer>
             <ProjectsTitle>Algunos Proyectos</ProjectsTitle>
             <CardContainer>
-            <Card>E-commerce PedimonYa</Card>
-            <Card>Esputifai</Card>
-            <Card>Memoria</Card>
-            <Card>Rock, Paper, Scissors</Card>
-            <Card>E-commerce React</Card>
+            {proyectos.map(item => 
+                <Card key={item.id}>
+                    <ProyectImg src={item.img}></ProyectImg>
+                    <span>{item.nombre}</span>
+                    <LinkContainer>
+                        <Links href={item.github}>GitHub</Links>
+                        <Links href={item.vercel}>Vercel</Links>
+                    </LinkContainer>
+                </Card>
+            )}
             </CardContainer>
         </ProjectsContainer>
     )
