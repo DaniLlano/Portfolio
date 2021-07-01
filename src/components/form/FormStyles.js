@@ -7,7 +7,14 @@ flex-direction: column;
 align-items: center;
 width: 25rem;
 height: auto;
+
+
+@media (max-width: 480px) {
+    width: 90%;
+}
 `
+
+
 export const FormTitle = styled.h3`
 margin: 1rem;
 `
